@@ -1,0 +1,10 @@
+# start the monogDB
+mh_mokh7@MahdyBeast:~$ sudo systemctl start mongod
+
+# see the status that it started or not
+mh_mokh7@MahdyBeast:~$ sudo systemctl status mongod
+
+
+### for the mongoDB gui (compass monogDB)
+you should write the below text on the new connection and enter:
+mongodb://localhost:27017

@@ -1,0 +1,38 @@
+# This initializes the log metadata directory for KRaft.
+$ cd ~/Desktop/kafka_2.13-4.0.0
+
+
+# Generate a Cluster UUID
+$ KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+
+
+# Format Log Directories
+$ bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties
+
+
+#Start the Kafka Server
+$ bin/kafka-server-start.sh config/server.properties
+
+
+cd ~/Desktop/kafka_2.13-4.0.0
+KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties
+bin/kafka-server-start.sh config/server.properties
+
+
+#### check that kakfa is running
+netstat -tuln | grep 9092
+
+
+## delete some kafka topics
+# Single topic
+bin/kafka-topics.sh   --bootstrap-server localhost:9092   --delete   --topic my-topic-name
+
+
+# Multiple topics (bash loop)
+for t in topic1 topic2 another_topic; do
+  bin/kafka-topics.sh \
+    --bootstrap-server your.kafka.host:9092 \
+    --delete \
+    --topic "$t"
+done

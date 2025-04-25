@@ -1,0 +1,5 @@
+{"merchant_category":"retail","total_commission":91843742,"avg_commission":20732.221670428895,"commission_to_transaction_ratio":0.01999952397671913}
+{"merchant_category":"entertainment","total_commission":93105719,"avg_commission":20462.795384615383,"commission_to_transaction_ratio":0.019999519521188003}
+{"merchant_category":"food_service","total_commission":93248092,"avg_commission":20368.74006116208,"commission_to_transaction_ratio":0.019999519302522223}
+{"merchant_category":"government","total_commission":94060443,"avg_commission":20745.576312307014,"commission_to_transaction_ratio":0.019999535347876404}
+{"merchant_category":"transportation","total_commission":93330522,"avg_commission":20444.802190580504,"commission_to_transaction_ratio":0.019999518359948242}

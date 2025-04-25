@@ -1,0 +1,28 @@
+1. List all topics
+
+bin/kafka-topics.sh \
+  --bootstrap-server localhost:9092 \
+  --list
+
+This will print every topic name on your broker.
+
+
+
+2. Describe a topic (partitions, replicas, offsets)
+
+bin/kafka-topics.sh \
+  --bootstrap-server localhost:9092 \
+  --describe \
+  --topic <your_topic_name>
+
+That shows you partition counts, leader/ISR, and log size (i.e. high‑watermark offsets).
+
+
+
+3. Peek at the messages in a topic
+
+bin/kafka-console-consumer.sh \
+  --bootstrap-server localhost:9092 \
+  --topic <your_topic_name> \
+  --from-beginning \
+  --max-messages 10
