@@ -1,2 +1,2 @@
 # Data-Science-MiniProjects
-Some data science mini projects that I have done.
+Some data science good quality mini projects that I have done.
