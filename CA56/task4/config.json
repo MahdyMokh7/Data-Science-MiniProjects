@@ -1,0 +1,5 @@
+{
+  "dataset_path": "task4_images/my_class",
+  "src_dataset_path": "images",
+  "annotations_path": "annotations/instances_default.json"
+}
