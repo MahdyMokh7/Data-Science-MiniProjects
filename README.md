@@ -153,10 +153,3 @@ pip install -r requirements.txt
 
 3. Navigate to any CA folder (`CA0`–`CA5`) and run notebooks or scripts.
 4. Follow documentation in each folder for dataset setup, preprocessing, and execution instructions.
-
-
-
-
-If you want, I can **also create a visually appealing “Skills & Tools Table”** section for this README that quickly summarizes all your tools and methods in one glance—it looks very professional on GitHub.
-
-Do you want me to do that?
